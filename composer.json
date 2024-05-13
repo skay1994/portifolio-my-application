@@ -1,0 +1,40 @@
+{
+    "name": "skay1994/my-application",
+    "description": "A project created for study and portfolio, based on other PHP frameworks and their strategies and resources.",
+    "version": "0.0.1",
+    "type": "project",
+    "authors": [
+        {
+            "name": "Jorge Carlos",
+            "email": "skay_1994@yahoo.com.br"
+        }
+    ],
+    "require": {
+        "php": "^8.3",
+        "skay1994/my-framework": "dev-master"
+    },
+    "require-dev": {
+        "pestphp/pest": "^2.34"
+    },
+    "scripts": {
+        "test": "vendor/bin/pest"
+    },
+    "repositories": {
+        "skay1994/my-framework": {
+            "type": "vcs",
+            "url": "https://github.com/skay1994/portifolio-my-framework.git"
+        }
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/",
+            "Tests\\": "tests/"
+        }
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    }
+}
