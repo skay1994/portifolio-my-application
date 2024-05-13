@@ -14,7 +14,8 @@
         "skay1994/my-framework": "dev-master"
     },
     "require-dev": {
-        "pestphp/pest": "^2.34"
+        "pestphp/pest": "^2.34",
+        "spatie/ignition": "^1.14"
     },
     "scripts": {
         "test": "vendor/bin/pest"
