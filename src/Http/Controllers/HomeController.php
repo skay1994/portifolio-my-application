@@ -9,12 +9,14 @@ class HomeController
     #[Route]
     public function index()
     {
-        return 'Hello World!';
+        return view('welcome');
     }
 
-    #[Route('edit/{?name}', methods: ['GET'])]
-    public function edit(string $name = 'Person')
+    #[Route('/pt-br')]
+    public function portugese()
     {
-        return 'Hello ' . $name .', whatsup!';
+        return view('welcome_br', [
+            'title' => 'Bem-vindo a Minha Aplicação',
+        ]);
     }
 }
